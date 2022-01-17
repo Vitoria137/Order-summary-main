@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="img/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link
+      rel="icon"
+      type="img/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <section class="principal">
-    <header>
-      <img src="img/illustration-hero.svg" alt="Illustration Hero">
-    </header>
-    <main class="conteudo">
+    <title>Frontend Mentor | Order summary card</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="principal">
+      <header class="imagem-de-cima">
+        <img src="img/illustration-hero.svg" alt="Illustration Hero" />
+      </header>
+      <div class="conteudo">
         <h1 class="titulo">Order Summary</h1>
-        <p class="paragrafo">You can now listen to million of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-      <div class="preco">
-        <img src="img/icon-music.svg" alt="Icon Music">
-        <div class="preco-textos">
-          <p class="preco-titulo">Annual Plan</p>
-          <p class="preco-texto">$59.99/year</p>
+        <p class="paragrafo">
+          You can now listen to million of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div class="preco">
+          <img src="img/icon-music.svg" alt="Icon Music" />
+          <div class="preco-textos">
+            <p class="preco-titulo">Annual Plan</p>
+            <p class="preco-texto">$59.99/year</p>
+          </div>
+          <a href="#">Change</a>
         </div>
-        <a href="#">Change</a>
+        <div class="btn">
+          <button class="btn-continuar">Proceed to Payment</button>
+          <button class="btn-cancelar">Cancel Order</button>
+        </div>
       </div>
-      <div class="btn">
-        <button class="btn-continuar">Proceed to Payment</button>
-        <button class="btn-cancelar">Cancel Order</button>
-      </div>
-      
-    </main>
-  </section>
+    </section>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/Vitoria137" target="blank">Vitoria Palmeira</a>.
-  </div>
-</body>
+    <div class="attribution">
+      <p class="creditos">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/Vitoria137" target="blank"
+          >Vitoria Palmeira</a
+        >.
+      </p>
+    </div>
+  </body>
 </html>
