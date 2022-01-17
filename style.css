@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    /* PRIMARY */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* NEUTRAL */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --hover: #766cf1;
+}
+
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal{
+    width: 340px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: white;
+    transition: .5s ease-in-out;
+    box-shadow: 0 3px 10px var(--desaturated-blue);
+    margin-top: 5%;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+}
+
+header > img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 40px;
+}
+
+.paragrafo{
+    color: var(--desaturated-blue);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.preco{
+    background-color: var(--very-pale-blue);
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    width: 85%;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.preco > img{
+    width: 45px;
+    margin-left: 30px;
+}
+
+.preco-textos{
+    font-size: 13px;
+}
+
+.preco-titulo{
+    font-weight: 700;
+}
+
+.preco-texto{
+    color: var(--desaturated-blue);
+}
+
+.preco > a{
+    cursor: pointer;
+    color: var(--bright-blue);
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 20px;
+    text-decoration:underline;
+    transition: all .3s ease-in-out;
+}
+
+.preco > a:hover{
+    text-decoration: none;
+    color: var(--hover);
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 85%;
+}
+
+.btn-continuar{
+    margin-top: 15px;
+    cursor: pointer;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: var(--bright-blue);
+    box-shadow: 0 6px 20px var(--desaturated-blue);
+    transition: all .3s ease-in-out;
+}
+
+.btn-continuar:hover{
+    background-color: var(--hover);
+}
+
+.btn-cancelar{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    margin-top: -5px;
+    height: 45px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 13px;
+    color: var(--desaturated-blue);
+    background-color: transparent;
+}
+
+.btn-cancelar:hover{
+    color: black;
+}
+
+@media screen and (min-width: 1100px){
+    .principal{
+      margin-top: 60px;
+    }
+    .attribution{
+        margin-top: 10px;
+      }
+  } 
+
+  @media screen and (max-width: 1100px){
+    .attribution{
+      margin-top: -20px;
+    }
+  }
